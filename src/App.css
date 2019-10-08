@@ -1,3 +1,29 @@
 .App {
   text-align: center;
 }
+
+.login-form {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-contained {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.MuiCircularProgress-root.MuiCircularProgress-colorPrimary.MuiCircularProgress-indeterminate {
+  margin-top: auto;
+  margin-bottom: auto;
+}
