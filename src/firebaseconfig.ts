@@ -3,15 +3,15 @@ import "firebase/firestore";
 import "firebase/auth";
 
 // TODO: GET RID OF THIS!!!
-const config = {
-    apiKey: "AIzaSyCS2TXzYlZXuiZRAMkHOrkzkDSzUyaM1_k",
-    authDomain: "fir-techtalk.firebaseapp.com",
-    databaseURL: "https://fir-techtalk.firebaseio.com",
-    projectId: "fir-techtalk",
-    storageBucket: "fir-techtalk.appspot.com",
-    messagingSenderId: "467167121344",
-    appId: "1:467167121344:web:9ab1b5d096c7a9d054c225",
-    measurementId: "G-7HFYE2FRYX"
+var config = {
+    apiKey: "AIzaSyDpyv6Nl_by3gl67G0c3E7iNN7b0tFGRwE",
+    authDomain: "techtalktest-a383b.firebaseapp.com",
+    databaseURL: "https://techtalktest-a383b.firebaseio.com",
+    projectId: "techtalktest-a383b",
+    storageBucket: "techtalktest-a383b.appspot.com",
+    messagingSenderId: "766985813539",
+    appId: "1:766985813539:web:383a908d972f14a7823b96",
+    measurementId: "G-YN0FSC96FJ"
 };
 
 const fire = firebase.initializeApp(config);
