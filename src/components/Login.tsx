@@ -34,15 +34,15 @@ const Login = () => {
         <>
             <h3>Please login to view this app.</h3>
             <div className="login-form">
-                <p>
+                <div className="input-field">
                     <TextField type="email" placeholder="email address" value={email} onChange={(e) => setEmail(e.target.value)} autoFocus={true} />
-                </p>
-                <p>
+                </div>
+                <div className="input-field">
                     <TextField type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                </p>
-                <p>
+                </div>
+                <div className="input-field">
                     <Button variant="contained" onClick={onSubmitLogin} >Log in</Button>
-                </p>
+                </div>
                 <p className="error-label">{error}</p>
             </div>
         </>
