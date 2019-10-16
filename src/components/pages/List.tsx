@@ -1,14 +1,10 @@
 import { Button, Table, TableBody, TableCell, TableHead, TableRow, TextField } from "@material-ui/core";
 import { Add, Clear } from "@material-ui/icons";
 import React, { ChangeEvent, useState } from "react";
-import { Developer } from "../../../functions/src/types";
 import { db } from "../../firebaseconfig";
 import { useCollection } from "../../hooks";
 import { ListItem, Loading } from "../index";
-
-interface DeveloperDoc extends Developer {
-    id: string;
-}
+import { Developer, DeveloperDoc } from "../../interfaces";
 
 const List = () => {
     const [data, loading] = useCollection("developers");

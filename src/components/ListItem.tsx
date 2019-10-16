@@ -1,14 +1,10 @@
 import { Button, TableCell, TableRow, TextField } from "@material-ui/core";
-import { Delete, Edit, Save, Cancel } from "@material-ui/icons";
+import { Cancel, Delete, Edit, Save } from "@material-ui/icons";
 import React, { ChangeEvent, useState } from "react";
-import { Developer } from "../../functions/src/types";
 import { db } from "../firebaseconfig";
+import { DeveloperDoc } from "../interfaces";
 
-interface ListItemProps extends Developer {
-    id: string;
-}
-
-const ListItem = ({ id, firstName, lastName, team }: ListItemProps) => {
+const ListItem = ({ id, firstName, lastName, team }: DeveloperDoc) => {
     const [editMode, setEditMode] = useState<boolean>(false);
 
     const [newFirstName, setNewFirstName] = useState<string>(firstName);
