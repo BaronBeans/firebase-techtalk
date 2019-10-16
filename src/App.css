@@ -1,21 +1,22 @@
 .App {
   text-align: center;
 }
+.bolded {
+  font-weight: bold;
+}
 
+/* Login form */
 .login-form {
   margin-top: 5rem;
   text-align: center;
 }
-
 .login-form .input-field {
   margin: 1rem;
 }
-
 h3.margin-top-5 {
   margin-top: 5rem;
   text-align: center;
 }
-
 
 /* Navbar */
 .navbar ul {
@@ -27,7 +28,6 @@ h3.margin-top-5 {
   display: flex;
   flex-wrap: wrap;
 }
-
 .navbar a {
   color: white;
   text-decoration: none;
@@ -37,11 +37,9 @@ h3.margin-top-5 {
   justify-content: center;
   align-items: center;
 }
-
 .navbar a:hover {
   background-color: grey;
 }
-
 .user-text {
   color: white;
   margin-left: auto;
@@ -49,11 +47,13 @@ h3.margin-top-5 {
   display: flex;
   align-items: center;
 }
-
 .sign-out-button {
   display: flex;
   align-items: center;
   margin-right: 1rem;
+}
+.spaceafter {
+  margin-right: 0.5rem;
 }
 
 /* Progress Bar */
@@ -62,57 +62,13 @@ h3.margin-top-5 {
   justify-content: space-around;
   height: 100vh;
 }
-
 .MuiCircularProgress-root.MuiCircularProgress-colorPrimary.MuiCircularProgress-indeterminate {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-
-
-
-
-/* button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-contained {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.bolded {
-  font-weight: bold;
-}
-
-.spaceafter {
-  margin-right: 0.5rem;
-}
-
+/* List */
 table.MuiTable-root {
   width: calc(100% - 10rem);
   margin: 0 auto;
 }
-
-.modal-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.modal {
-  background-color: white;
-  margin: auto;
-  width: 80%;
-  height: 80%;
-}
-
-.add-developer-modal {
-  display: flex;
-  flex-direction: column;
-  padding: 10rem;
-} */
-
-/* .MuiFormControl-root.MuiTextField-root {
-  width: 20rem;
-  margin: 2rem auto;
-} */
-/* 
-.MuiTableCell-head {
-  font-weight: bold;
-} */

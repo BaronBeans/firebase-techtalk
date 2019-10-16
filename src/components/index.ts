@@ -1,6 +1,6 @@
+import { ListItem } from "./ListItem";
 import { Loading } from "./Loading";
 import { Login } from "./Login";
-import { Modal } from "./Modal";
-import { ListItem } from "./ListItem";
 
-export { Loading, Login, Modal, ListItem };
+export { Loading, Login, ListItem };
+

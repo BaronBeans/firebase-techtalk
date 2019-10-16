@@ -3,7 +3,7 @@ import { Add, Clear } from "@material-ui/icons";
 import React, { ChangeEvent, useState } from "react";
 import { db } from "../../firebaseconfig";
 import { useCollection } from "../../hooks";
-import { DeveloperDoc } from "../../interfaces";
+import { DeveloperDoc, Developer } from "../../interfaces";
 import { ListItem, Loading } from "../index";
 
 const List = () => {
@@ -47,7 +47,7 @@ const List = () => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {data.map((d: DeveloperDoc) => (
+                        {data.sort((a: DeveloperDoc, b: DeveloperDoc) => (a.firstName > b.firstName) ? 1 : -1).map((d: DeveloperDoc) => (
                             <ListItem key={d.id} id={d.id} firstName={d.firstName} lastName={d.lastName} team={d.team} />
                         ))}
                         <TableRow>
