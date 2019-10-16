@@ -3,8 +3,8 @@ import { Add, Clear } from "@material-ui/icons";
 import React, { ChangeEvent, useState } from "react";
 import { db } from "../../firebaseconfig";
 import { useCollection } from "../../hooks";
+import { DeveloperDoc } from "../../interfaces";
 import { ListItem, Loading } from "../index";
-import { Developer, DeveloperDoc } from "../../interfaces";
 
 const List = () => {
     const [data, loading] = useCollection("developers");
