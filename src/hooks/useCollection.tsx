@@ -8,7 +8,6 @@ const useCollection = (collection: string) => {
     useEffect(() => {
         const unsubscribe = db.collection(collection).onSnapshot((snapshot) => {
             const collectionData = snapshot.docs.map((doc) => {
-                console.info(doc.data());
                 return {
                     id: doc.id,
                     ...doc.data()

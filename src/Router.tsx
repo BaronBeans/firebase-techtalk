@@ -12,7 +12,7 @@ const AppRouter = () => {
         <Router history={history}>
             <Navigation />
             <Route path="/" exact component={Home} />
-            <Route path="list" component={List} />
+            <Route path="/list" component={List} />
         </Router>
     );
 };
@@ -27,7 +27,7 @@ const Navigation = () => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/list">List</Link>
+                    <Link to="/list">List Developers</Link>
                 </li>
 
                 <span className="user-text"><span className="bolded spaceafter">{auth.currentUser && auth.currentUser.email}</span>is logged in.</span>
