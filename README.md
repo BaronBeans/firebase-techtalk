@@ -5,20 +5,22 @@ This app demonstrates some firebase functionality including:
 * Authentication
 * Firestore
 
-To get started clone this app and follow the steps below to run this using your own firebase account.
+To get started fork this repo and follow the steps below to run this using your own firebase account.
+
+Clone your forked copy and run `npm install`
 
 ---
 ## Set up from Firebase Console
-1. Head to console.firebase.google.com and sign in with your google account
+1. Head to [console.firebase.google.com](https://console.firebase.google.com) and sign in with your google account
 2. Create a new project (you can call this what you like)
 3. Choose whether you want to include Analytics
 4. Select which account you want to use (choose Default Account for Firebase to use the Google account you signed in with)
 5. When the new projects has been created, click Continue
 6. Next follow the instructions to add Firebase to your app... you want to choose web app which is depicted by the </> symbol
 7. Give the app a name. This can be the same as your project name, or "Web app" doesn't really matter
-8. At this point you can choose if you want to include Firebase Hosting, this is up to you but it can be set up later
+8. Make sure you don't choose Firebase Hosting, this can be set up later
 9. Copy the contents of `var firebaseConfig = {...}` object and paste this into the firebaseconfig.ts file in the src folder of the code
-10. Go back to the Firebase Console and click Authentication in the panel on the left
+10. Go back to the Firebase Console and click Authentication in the Develop panel on the left
 11. Set up sign-in method Email/Password should be enabled
 12. Go back to users and add a new user
 
