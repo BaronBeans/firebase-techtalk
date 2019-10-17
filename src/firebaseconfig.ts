@@ -3,7 +3,7 @@ import "firebase/firestore";
 import "firebase/auth";
 
 // copy and paste your firebaseConfig object here !!!
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "",
     authDomain: "",
     databaseURL: "",
